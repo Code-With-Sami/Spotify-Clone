@@ -30,7 +30,7 @@ async function getSongs(folder) {
     for (let i = 0; i < as.length; i++) {
         const element = as[i];
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split(`./${folder}/`)[1]);
+            songs.push(element.href.split(`/${folder}/`)[1]);
         }
     }
 
@@ -64,7 +64,7 @@ async function getSongs(folder) {
 }
 
 const playMusic = (track, pause = false) => {
-    currentSong.src = `./${cuurentFolder}/` + track
+    currentSong.src = `/${cuurentFolder}/` + track
     if (!pause) {
         currentSong.play()
         play.src = "img/pause.svg"
@@ -75,7 +75,7 @@ const playMusic = (track, pause = false) => {
 
 // asyn function that display the dynamic albums
 async function displayAlbum() {
-    let a = await fetch(`./songs/`);
+    let a = await fetch(`/songs/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
