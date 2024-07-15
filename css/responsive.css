@@ -1,0 +1,144 @@
+/* Media Quereis For Responsiveness */
+
+@media screen and (max-width: 1450px) {
+    .sidebar {
+        width: 30vw;
+    }
+
+    .main {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .sidebar {
+        padding: 10px 15px;
+        width: 370px;
+        position: absolute;
+        left: -100%;
+        z-index: 1;
+        background-color: #000000;
+        border-radius: 7px;
+        transition: left 0.5s;
+
+    }
+
+    .main {
+        width: 100vw;
+        min-height: 97vh;
+    }
+
+    .spotifyPlaylist {
+        padding: 35px 10px 25px 10px;
+    }
+
+    .spotifyPlaylist>h2 {
+        margin-bottom: 35px;
+    }
+
+    .cardsContainer {
+        max-height: 60vh;
+        margin-bottom: 70px;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .card-body h2 {
+        font-size: 16px;
+    }
+    
+    .card-body span {
+        font-size: 14px;
+    }
+
+    .library {
+        min-height: 66vh;
+    }
+
+    .songList {
+        height: 50vh;
+    }
+
+    .humberger {
+        display: inline-block;
+    }
+
+    .close {
+        display: block;
+    }  
+}
+@media screen and (max-width: 620px) {
+    .playBar{
+        flex-direction: column;
+        padding: 10px 15px 50px 15px;
+        height: 60px;
+        gap: 5px;
+    }
+    .cardsContainer {
+        max-height: 57vh;
+    }
+
+    .library {
+        height: 65vh;
+        padding: 15px 10px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .card {
+        width: 270px;
+    }
+
+    .card-body h2 {
+        font-size: 20px;
+    }
+    
+    .card-body span {
+        font-size: 14px;
+    }
+
+    .nav svg{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .playBar{
+        flex-direction: column;
+        padding: 10px 15px 50px 15px;
+        height: 80px;
+        gap: 5px;
+    }
+    .cardsContainer {
+        max-height: 52vh;
+    }
+    .timeAndVol{
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        padding: 7px 15px;
+        width: 320px;
+    }
+    .songList {
+        height: 50vh;
+    }
+    .library {
+        height: 65vh;
+        padding: 15px 10px;
+        margin-bottom: 0;
+    }
+    
+    .library-header {
+        padding: 10px 25px;
+    }
+    .library-footer {
+        bottom: 0px;
+        padding: 0 25px;
+    }
+    
+    .library-footer a {
+        margin-right: 10px;
+    }
+}

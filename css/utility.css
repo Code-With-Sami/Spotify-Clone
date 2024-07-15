@@ -1,0 +1,63 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-primary {
+    background-color: #121212;
+}
+
+.bg-secondary {
+    background-color: #000000;
+}
+
+.bg-third {
+    background-color: #101010;
+}
+
+.text-primary {
+    color: #b3b3b3;
+}
+
+.text-secondary {
+    color: #ffffff;
+}
+
+.text-third {
+    color: #A7A7A7;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.p-25 {
+    padding: 25px;
+}
