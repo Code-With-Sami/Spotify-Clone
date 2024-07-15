@@ -21,7 +21,7 @@ function secondsToMinutesSeconds(seconds) {
 // Async function that fetch the songs
 async function getSongs(folder) {
     cuurentFolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/${folder}/`);
+    let a = await fetch(`/${folder}/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -75,7 +75,7 @@ const playMusic = (track, pause = false) => {
 
 // asyn function that display the dynamic albums
 async function displayAlbum() {
-    let a = await fetch(`http://127.0.0.1:3000/songs/`);
+    let a = await fetch(`/songs/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -87,7 +87,7 @@ async function displayAlbum() {
         const e = array[index];
         if (e.href.includes("/songs")) {
             let folder = e.href.split('/').slice(-2)[0]
-            let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`);
+            let a = await fetch(`/songs/${folder}/info.json`);
             let response = await a.json()
             cardsContainer.innerHTML = cardsContainer.innerHTML + `<div data-folder="${folder}" class="card">
                         <div class="card-img">
